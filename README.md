@@ -1,2 +1,5 @@
 # SEMANTIC-HTML
- This a cheat sheet for sematic HTML that covers the most common tags used in it.
+
+ ## What does this project take about
+
+&nbsp;&nbsp;&nbsp;&nbsp;This project covers the most common used semantic **HTML** elements.
