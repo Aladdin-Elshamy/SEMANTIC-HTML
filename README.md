@@ -17,10 +17,6 @@ the project contains:<br>
 - **aside tag** section.<br>
 - **footer tag** section.<br>
 
-### Introduction<br>
-
-In this section we gave an explaination about semantic **Html** element followed by an example to make sure the user can understand well.
-
 
 
 
