@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML5 SEMANTIC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/atom-one-dark.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Semantic HTML Cheat Sheet</h1>
+        </div>
+    </header>
+    <div class="container">
+        <main>
+            <section id="intro">
+                <article>
+                    <h2>What does Semantic HTML mean?</h2>
+                    <p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as to what it does or what content goes in it. An element such as <code>&ltdiv&gt</code> was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.</p>
+                </article>
+                <pre>
+                    <code>&lt;!--Non Semantic HTML--&gt;
+&lt;div id=&quot;footer&quot;&gt;
+ &lt;p&gt;this is a footer&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;!--Semantic HTML--&gt;
+&lt;footer&gt;
+ &lt;p&gt;this is a footer&lt;/p&gt;
+&lt;/footer&gt;</code>
+                </pre>
+            </section>
+            <section id="main">
+                <article>
+                    <h2>HTML &ltmain> Tag</h2>
+                    <p>The <code>&ltmain></code> tag specifies the main content of a document.The content inside the <code>&ltmain></code> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+                    <br><br><strong>Note</strong>: There must not be more than one <code>&ltmain></code> element in a document. The <code>&ltmain></code> element must NOT be a descendant of any semantic element.
+                    </p>
+                </article>
+                <pre>
+                    <code>&lt;main&gt;
+ &lt;h1&gt;Most Popular Browsers&lt;/h1&gt;
+ &lt;p&gt;Chrome, Firefox, and Edge are the most used browsers today.&lt;/p&gt;
+
+ &lt;article&gt;
+  &lt;h2&gt;Google Chrome&lt;/h2&gt;
+  &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;
+ &lt;/article&gt;
+
+ &lt;article&gt;
+  &lt;h2&gt;Mozilla Firefox&lt;/h2&gt;
+  &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;
+ &lt;/article&gt;
+
+ &lt;article&gt;
+  &lt;h2&gt;Microsoft Edge&lt;/h2&gt;
+  &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;
+ &lt;/article&gt;
+&lt;/main&gt;</code>
+                </pre>
+            </section>
+            <section id="header">
+                <article>
+                    <h2>HTML &ltheader> Element</h2>
+                    <p>The <code>&ltheader></code> element represents a container for introductory content or a set of navigational links. A <code>&ltheader></code> element typically contains:<ul>
+                        <li>one or more heading elements (<code>&lth1></code> - <code>&lth6></code>)</li>
+                        <li>logo or icon</li>
+                        <li>authorship information</li>
+                    </ul>
+                    <strong>Note</strong>: You can have several &ltheader> elements in one HTML document. However,<code>&ltheader></code> cannot be placed within a <code>&ltfooter></code>, <code>&ltaddress></code> or another <code>&ltheader></code> element.
+                    </p>
+                </article>
+                <pre>
+                    <code>&lt;article&gt;
+
+ &lt;header&gt;
+  &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;
+  &lt;p&gt;WWF's mission:&lt;/p&gt;
+ &lt;/header&gt;
+ 
+ &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.&lt;/p&gt;
+
+&lt;/article&gt;</code>
+                </pre>
+            </section>
+            <section id="nav">
+                <article>
+                    <h2>HTML &ltnav> Element</h2>
+                    <p>The <code>nav</code> element defines a set of navigation links.
+                    </p>
+                </article>
+                <pre>
+                    <code>&lt;nav&gt;
+ &lt;a href=&quot;/html/&quot;&gt;HTML&lt;/a&gt; 
+ &lt;a href=&quot;/css/&quot;&gt;CSS&lt;/a&gt; 
+ &lt;a href=&quot;/js/&quot;&gt;JavaScript&lt;/a&gt;
+ &lt;a href=&quot;/jquery/&quot;&gt;jQuery&lt;/a&gt;
+&lt;/nav&gt;</code>
+                </pre>
+            </section>
+            <section id="section">
+                <article>
+                    <h2>HTML &ltsection> Element</h2>
+                    <p>The <code>&ltsection></code> element defines a section in a document. According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."<br><br>
+                    Examples of where a <code>&ltsection></code> element can be used:<ul>
+                        <li>Chapters</li>
+                        <li>Introduction</li>
+                        <li>News items</li>
+                        <li>Contact information</li>
+                    </ul>
+                    A web page could normally be split into sections for introduction, content, and contact information.
+                    </p>
+                </article>
+                <pre>
+                    <code>&lt;section&gt;
+ &lt;h1&gt;WWF&lt;/h1&gt;
+ &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;section&gt;
+ &lt;h1&gt;WWF's Panda symbol&lt;/h1&gt;
+ &lt;p&gt;The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.&lt;/p&gt;
+&lt;/section&gt;</code>
+                </pre>
+            </section>
+            <section id="article">
+                <article>
+                    <h2>HTML &ltarticle> Element</h2>
+                    <p>The <code>&ltarticle></code> element specifies independent, self-contained content. An article should make sense on its own, and it should be possible to distribute it independently from the rest of the web site.<br><br>Examples of where the <code>&ltarticle></code> element can be used: <ul>
+                        <li>Forum posts</li>
+                        <li>Blog posts</li>
+                        <li>User comments</li>
+                        <li>Product cards</li>
+                        <li>Newspaper articles</li>
+                    </ul></p>
+                </article>
+                <pre>
+                    <code>&lt;article&gt;
+ &lt;h2&gt;Google Chrome&lt;/h2&gt;
+ &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+ &lt;h2&gt;Mozilla Firefox&lt;/h2&gt;
+ &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article&gt;
+ &lt;h2&gt;Microsoft Edge&lt;/h2&gt;
+ &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;
+&lt;/article&gt;</code>
+                </pre>
+            </section>
+            <section id="aside">
+                <article>
+                    <h2>HTML &ltaside> Element</h2>
+                    <p>The <code>&ltaside></code> element is used to mark additional information that can enhance another element but isn’t required in order to understand the main content. Usually, this information would be in a sidebar or a location where it doesn’t obstruct the main piece of content. An example of this would be an article that discusses how to take care of a dog and next to the article an ad would appear advertising a dog grooming product.</p>
+                </article>
+                <pre>
+                    <code>&lt;article&gt;
+&lt;!--Main Content--&gt;
+&lt;/article&gt;
+
+&lt;aside&gt;
+&lt;!--Additional information--&gt;
+&lt;/aside&gt;
+</code>
+                </pre>
+            </section>
+            <section id="footer">
+                <article>
+                    <h2>HTML <code>&ltfooter></code> Tag</h2>
+                    <p>The <code>&ltfooter></code> tag defines a footer for a document or section. A <code>&ltfooter></code> element typically contains: <ul>
+                        <li>authorship information</li>
+                        <li>copyright information</li>
+                        <li>contact information</li>
+                        <li>sitemap</li>
+                        <li>back to top links</li>
+                        <li>related documents</li>
+                    </ul>
+                    You can have several <code>&ltfooter></code> elements in one document.
+                    </p>
+                </article>
+                <pre>
+                    <code>&lt;footer&gt;
+ &lt;p&gt;Author: Hege Refsnes&lt;/p&gt;
+ &lt;p&gt;
+  &lt;a href=&quot;mailto:hege@example.com&quot;&gt;
+  hege@example.com&lt;/a&gt;
+ &lt;/p&gt;
+&lt;/footer&gt;</code>
+                </pre>
+            </section>
+            <section>
+                <h2>Table of Semantic Elements</h2>
+                <p>Common Semantic HTML elements.</p>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tag</th>
+                            <th scope="col">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">main</th>
+                            <td>Specifies the main content of a document</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">header</th>
+                            <td>Specifies a header for a document or section</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">nav</th>
+                            <td>Defines navigation links</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">section</th>
+                            <td>Defines a section in a document</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">article</th>
+                            <td>Defines independent, self-contained content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">aside</th>
+                            <td>Defines content aside from the page content</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">footer</th>
+                            <td>Defines a footer for a document or section</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+            <section id="references">
+                <h2>References</h2>
+                <p class="reference">These information is taken from <a href="https://www.w3schools.com/html/html5_semantic_elements.asp" target="_blank">W3schools</a> and <a href="https://www.codecademy.com/learn/learn-html-web-dev-path/modules/learn-semantic-html/cheatsheet" target="_blank">Codecademy</a>.</p>
+                <div class="more">
+                    <h3>Want to see more?</h3>
+                    <p>These are some useful website that will provide you with more information about semantic HTML.</p>
+                    <ul>
+                        <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Semantics">MDN</a></li>
+                        <li><a href="https://www.freecodecamp.org/news/semantic-html5-elements/">Freecodecamp</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Semantic_HTML">wikipedia</a></li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <aside>
+            <h3>In This Article</h3>
+            <ul class="sideNav">
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#main">Main</a></li>
+                <li><a href="#header">Header</a></li>
+                <li><a href="#nav">Nav</a></li>
+                <li><a href="#section">Section</a></li>
+                <li><a href="#article">Article</a></li>
+                <li><a href="#aside">Aside</a></li>
+                <li><a href="#footer">Footer</a></li>
+                <li><a href="#table">Common Tags</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </aside>
+    </div>
+    <footer>
+        <div class="container">
+            <p>Copyright <span class="copyright">&copy;</span> 2023, Aladdin-Elshamy</p>
+            <div class="icons">
+                <a href="https://www.facebook.com/alaaeldeen.elshamy.9" target="_blank">
+                    <i class="fa-brands fa-facebook-f">
+                    </i>
+                </a>
+                <a href="https://www.linkedin.com/in/aladdin-elshamy/" target="_blank">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://twitter.com/AladdinElshamy" target="_blank">
+                    <span class="panel">
+                    <i class="fa-brands fa-twitter"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+</body>
+</html>
