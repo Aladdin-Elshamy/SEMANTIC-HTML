@@ -1,7 +1,7 @@
 body{
     font-family: 'Space Mono', serif, sans-serif;
     background-color: #E6E6FA;
-    font-size: clamp(0.625rem, 1vw + 1rem, 1rem);
+    font-size: clamp(0.313rem, 2vw + 1rem, 0.75rem);
     margin: 0;
 }
 
