@@ -1,7 +1,7 @@
 body{
     font-family: 'Space Mono', serif, sans-serif;
     background-color: #E6E6FA;
-    font-size: clamp(0.188rem, 2vw + 1rem, 0.625rem);
+    font-size: clamp(0.625rem, 1vw + 1rem, 0.85rem);
     margin: 0;
 }
 
@@ -16,8 +16,8 @@ html{
 .container{
     margin-left:auto ;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
 
 }
 /* Small Screen */
