@@ -243,6 +243,11 @@ main section:last-of-type{
     border:1px solid black;
     margin-top:2em;
 }
+@media (max-width:768px){
+    .more{
+        margin-left: 0;
+    }
+}
 .more h3{
     color:#551A8B;
 }
