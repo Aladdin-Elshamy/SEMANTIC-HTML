@@ -1,5 +1,5 @@
 # SEMANTIC-HTML
-
+![image](https://github.com/Aladdin-Elshamy/SEMANTIC-HTML/assets/122921299/3c6f0c6b-d956-4582-9e6f-b9b558ca450c)
  ## What does this project take about
 
 This project covers the most common used semantic **HTML** elements.<br>
@@ -15,7 +15,13 @@ the project contains:<br>
 - **section tag** section.<br>
 - **article tag** section.<br>
 - **aside tag** section.<br>
-- **footer tag** section.<br>
+- **footer tag** section.<be>
+
+## Technologies Used
+The Oldgram website utilizes the following technologies:
+- HTML
+- CSS
+- JavaScript
 
 
 
